@@ -7,11 +7,11 @@ import {logger} from '../logger';
 import {generateSRI} from './import-sri';
 
 const SRI_CLIENT_HMR_SNOWPACK = generateSRI(
-  readFileSync(path.join(__dirname, '../../assets/hmr-client.js')),
+  readFileSync(path.join(__dirname, '../assets/hmr-client.js')),
 );
 
 const SRI_ERROR_HMR_SNOWPACK = generateSRI(
-  readFileSync(path.join(__dirname, '../../assets/hmr-error-overlay.js')),
+  readFileSync(path.join(__dirname, '../assets/hmr-error-overlay.js')),
 );
 
 const importMetaRegex = /import\s*\.\s*meta/;

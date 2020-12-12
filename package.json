@@ -39,6 +39,7 @@
     "@types/validate-npm-package-name": "^3.0.0",
     "@types/ws": "^7.2.4",
     "cross-env": "^7.0.2",
+    "esbuild": "^0.8.22",
     "execa": "^4.0.3",
     "httpie": "^1.1.2",
     "jest": "^26.2.2",
