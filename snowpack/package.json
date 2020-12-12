@@ -1,6 +1,6 @@
 {
   "name": "@rich_harris/snowpack",
-  "version": "2.17.1",
+  "version": "2.17.2",
   "description": "The ESM-powered frontend build tool. Fast, lightweight, unbundled.",
   "author": "Fred K. Schott <fkschott@gmail.com>",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --external:chokidar --external:fsevents --external:rollup-plugin-node-polyfills --target=node12",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --external:fsevents --external:rollup-plugin-node-polyfills --target=node12",
     "build:watch": "tsc --watch",
     "lint": "tsc --noEmit --noUnusedLocals true --noUnusedParameters true && package-check"
   },
@@ -48,7 +48,6 @@
     "index.esm.mjs"
   ],
   "dependencies": {
-    "chokidar": "^3.4.0",
     "rollup-plugin-node-polyfills": "^0.2.1"
   },
   "devDependencies": {
@@ -56,6 +55,7 @@
     "@snowpack/plugin-run-script": "^2.2.0",
     "cacache": "^15.0.0",
     "cachedir": "^2.3.0",
+    "chokidar": "^3.4.0",
     "compressible": "^2.0.18",
     "cosmiconfig": "^7.0.0",
     "css-modules-loader-core": "^1.1.0",
